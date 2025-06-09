@@ -1,0 +1,158 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background-color: var(--color-brown-500);
+  color: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-brown-500);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #b2b1b1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-brown-400);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+:root {
+  --color-primary: #111;
+  --color-secondary: #fff;
+
+  --color-brown-500: #332c29;
+  --color-brown-400: #59504c;
+  --color-bg-1: #ded9d7;
+}
+
+.hidden {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.797
+  ); /* Semi-transparent white background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  z-index: 1000; /* Make sure header stays on top of other elements */
+  backdrop-filter: blur(8px);
+  transition: 0.8s all ease; // Optional: subtle shadow for effect
+  border-color: var(--color-primary);
+}
+
+.hidden {
+  display: none;
+}
+
+.show_modals {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay.show_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(120deg) scale(0);
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+[data-aos="rotate"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+}
+
+[data-aos="rotate"].aos-animate {
+  opacity: 1;
+  animation: rotate 1s ease forwards;
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: translateX(100%) scale(0) rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1) rotate(-360deg);
+    opacity: 1;
+  }
+}
+
+[data-aos="rotate2"] {
+  opacity: 0;
+}
+
+[data-aos="rotate2"].aos-animate {
+  animation: rotate2 2s ease forwards;
+}
+
+.class__to__show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catsy</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link
+      rel="icon"
+      href="img/images-removebg-preview (1).png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="show__menu">
+      <ul class="show__menu-list">
+        <i class="ri-close-line menu__close__line"></i>
+        <li class="show__menu-item">
+          <a href="#" class="show__menu-link">Home</a>
+        </li>
+        <li class="show__menu-item">
+          <a href="#gallery" class="show__menu-link">Gallery</a>
+        </li>
+        <li class="show__menu-item">
+          <a href="#contact" class="show__menu-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal__1">
+      <i class="ri-close-large-line"></i>
+      <img src="img/jhhj.jpg" alt="cat" />
+      <div class="modal__1-text">
+        <h2 class="modal__1-title">Cat Blog</h2>
+        <p class="modal__1-p">
+          Etiam erat velit scelerisque in dictum non consectetur. Nisl purus in
+          mollis nunc sed id semper. Cras fermentum odio eu feugiat pretium nibh
+          ipsum. Tristique senectus.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal__2">
+      <i class="ri-close-large-line"></i>
+      <img src="img/hjhj.jpg" alt="cat" />
+      <div class="modal__2-text">
+        <h2 class="modal__2-title">Cat Care</h2>
+        <p class="modal__2-p">
+          Etiam erat velit scelerisque in dictum non consectetur. Nisl purus in
+          mollis nunc sed id semper. Cras fermentum odio eu feugiat pretium nibh
+          ipsum. Tristique senectus.
+        </p>
+      </div>
+    </div>
+
+    <div class="modal__3">
+      <i class="ri-close-large-line"></i>
+      <img src="img/2323.jpg" alt="cat" />
+      <div class="modal__3-text">
+        <h2 class="modal__3-title">Pet Guide</h2>
+        <p class="modal__3-p">
+          Etiam erat velit scelerisque in dictum non consectetur. Nisl purus in
+          mollis nunc sed id semper. Cras fermentum odio eu feugiat pretium nibh
+          ipsum. Tristique senectus.
+        </p>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo" data-aos="fade-right">
+          <img src="img/images-removebg-preview (1).png" alt="logo" />
+        </div>
+        <nav class="header__nav" data-aos="fade-left">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#gallery" class="header__nav-link">Gallery</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contact" class="header__nav-link">Contact</a>
+            </li>
+          </ul>
+          <i class="ri-menu-line hidden"></i>
+        </nav>
+      </div>
+    </header>
+    <div class="header__overlay"></div>
+    <main class="main">
+      <section class="hero" data-aos="fade-up">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <p class="hero__text-p" data-aos="fade-left">
+                Tips for life with cats
+              </p>
+              <h1 class="hero__title" data-aos="fade-right">
+                Cat Stories, News, Tips & Tricks
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="welcome">
+        <div class="container">
+          <div class="welcome__content">
+            <div class="welcome__text">
+              <h2 class="welcome__text-title" data-aos="fade-up">
+                Welcome to Club Cat Blog
+              </h2>
+              <p
+                class="welcome__text-p"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
+              </p>
+            </div>
+            <div class="welcome__images__cards">
+              <div class="welcome__images__card" data-aos="fade-up">
+                <img src="img/jhhj.jpg" alt="cat" />
+                <div class="welcome__images__card-text">
+                  <h3 class="welcome__images__card-title">Cat Cafe</h3>
+                  <p class="welcome__images__card-p">
+                    Etiam erat velit scelerisque in dictum non consectetur. Nisl
+                    purus in mollis nunc sed id semper. Cras fermentum odio eu
+                    feugiat pretium nibh ipsum. Tristique senectus.
+                  </p>
+                  <a
+                    href="#modal__1"
+                    class="welcome__images__card-link modal__1-button"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div
+                class="welcome__images__card"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <img src="img/hjhj.jpg" alt="cat" />
+                <div class="welcome__images__card-text">
+                  <h3 class="welcome__images__card-title">Cat Care</h3>
+                  <p class="welcome__images__card-p">
+                    Etiam erat velit scelerisque in dictum non consectetur. Nisl
+                    purus in mollis nunc sed id semper. Cras fermentum odio eu
+                    feugiat pretium nibh ipsum. Tristique senectus.
+                  </p>
+                  <a
+                    href="#modal__2"
+                    class="welcome__images__card-link modal__2-button"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+              <div
+                class="welcome__images__card"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <img src="img/2323.jpg" alt="cat" />
+                <div class="welcome__images__card-text">
+                  <h3 class="welcome__images__card-title">Pet Guide</h3>
+                  <p class="welcome__images__card-p">
+                    Etiam erat velit scelerisque in dictum non consectetur. Nisl
+                    purus in mollis nunc sed id semper. Cras fermentum odio eu
+                    feugiat pretium nibh ipsum. Tristique senectus.
+                  </p>
+                  <a
+                    href="#modal__3"
+                    class="welcome__images__card-link modal__3-button"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__image" data-aos="fade-down">
+            <img
+              src="img/51b70c74-b452-5494-cd8f-3e69c7c52380.jpg"
+              alt="cat"
+              class="blog__image-img"
+            />
+            <div
+              class="blog__image-text blog__image-text-1"
+              data-aos="fade-up-right"
+            >
+              <h2 class="blog__image-title blog__image-title-1">Cat Blog</h2>
+              <p class="blog__image-p blog__image-p-1">
+                Thinking of getting a cat?
+              </p>
+            </div>
+            <div
+              class="blog__image-text blog__image-text-2"
+              data-aos="fade-up-left"
+              data-aos-delay="400"
+            >
+              <h2 class="blog__image-title blog__image-title-2">
+                Cat Care for Beginners
+              </h2>
+              <ol class="blog__image-list">
+                <li class="blog__image-item">
+                  Provide plenty of human companionship.
+                </li>
+                <li class="blog__image-item">
+                  Provide regular, suitable meals with a constant supply of
+                  fresh water.
+                </li>
+                <li class="blog__image-item">
+                  Provide a clean and comfortable bed.
+                </li>
+                <li class="blog__image-item">
+                  Provide the cat with outdoor access or be prepared to empty
+                  and clean a litter tray on a daily basis.
+                </li>
+              </ol>
+              <button class="blog__image-button">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="gallery__grid">
+            <div
+              class="gallery__grid-item"
+              data-aos="fade-right"
+              data-aos-duration="12000"
+            >
+              <div class="gallery__grid-item-img">
+                <img
+                  src="img/ffff-min1.jpg"
+                  alt="cat"
+                  class="gallery__grid-item-img-img"
+                />
+              </div>
+            </div>
+            <div
+              class="gallery__grid-item"
+              data-aos="fade-left"
+              data-aos-duration="12000"
+            >
+              <div class="gallery__grid-item-img">
+                <img
+                  src="img/831d810a-e45d-11cb-5a85-58903c69faba.jpg"
+                  alt="cat"
+                  class="gallery__grid-item-img-img"
+                />
+              </div>
+            </div>
+            <div
+              class="gallery__grid-item"
+              data-aos="fade-right"
+              data-aos-duration="12000"
+              data-aos-delay="200"
+            >
+              <div class="gallery__grid-item-img">
+                <img
+                  src="img/16d17f42-5ef1-0abe-4606-2340daa35226.jpg"
+                  alt="cat"
+                  class="gallery__grid-item-img-img"
+                />
+              </div>
+            </div>
+            <div
+              class="gallery__grid-item"
+              data-aos="fade-left"
+              data-aos-duration="12000"
+              data-aos-delay="200"
+            >
+              <div class="gallery__grid-item-text">
+                <h2 class="gallery__grid-item-title">Why do we love cats?</h2>
+                <p class="gallery__grid-item-p">
+                  Adipiscing bibendum est ultricies integer quis auctor elit.
+                  Eget nunc scelerisque viverra mauris in. Volutpat est velit
+                  egestas dui id. Viverra suspendisse potenti nullam ac tortor
+                  vitae purus faucibus ornare. Nulla pharetra diam sit amet
+                  nisl. Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Tempus quam pellentesque nec nam aliquam sem et. Nunc
+                </p>
+                <button class="gallery__grid-item-button">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mail">
+        <div class="container">
+          <div class="mail__circle-img-wrapper" data-aos="rotate">
+            <img src="img/jhjh.jpg" alt="cat" class="mail__circle-img" />
+          </div>
+          <div class="mail__text">
+            <h2 class="mail__text-title" data-aos="fade-up">
+              Subscribe to our newsletter
+            </h2>
+            <p class="mail__text-p" data-aos="fade-up" data-aos-delay="200">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
+            </p>
+            <form action="" class="mail__form">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="mail__form-input"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              />
+
+              <div
+                class="button-wrapper"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
+                <button type="submit" class="mail__form-button">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p class="mail__form-p" data-aos="fade-up" data-aos-delay="600">
+              And don't worry, we hate spam too! You can unsubcribe at anytime.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <div class="steps__grid">
+            <div class="steps__grid-item">
+              <img
+                src="img/ghgh.jpg"
+                alt="cat"
+                class="steps__grid-item-img"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
+            </div>
+            <div
+              class="steps__grid-item"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <div class="steps__grid-item-card">
+                <h3 class="steps__grid-item-card-title">Pet Guide</h3>
+                <p class="steps__grid-item-card-p">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <button class="steps__grid-item-card-button">Read More</button>
+              </div>
+              <div class="steps__grid-item-card">
+                <h3 class="steps__grid-item-card-title">Top Tips</h3>
+                <p class="steps__grid-item-card-p">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <button class="steps__grid-item-card-button">Read More</button>
+              </div>
+              <div class="steps__grid-item-card">
+                <h3 class="steps__grid-item-card-title">Best Toys</h3>
+                <p class="steps__grid-item-card-p">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <button class="steps__grid-item-card-button">Read More</button>
+              </div>
+              <div class="steps__grid-item-card">
+                <h3 class="steps__grid-item-card-title">Cat Products</h3>
+                <p class="steps__grid-item-card-p">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <button class="steps__grid-item-card-button">Read More</button>
+              </div>
+              <div class="steps__grid-item-card">
+                <h3 class="steps__grid-item-card-title">Cat Lovers</h3>
+                <p class="steps__grid-item-card-p">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <button class="steps__grid-item-card-button">Read More</button>
+              </div>
+              <div class="steps__grid-item-card">
+                <h3 class="steps__grid-item-card-title">Gifts for Cats</h3>
+                <p class="steps__grid-item-card-p">
+                  Sample text. Click to select the text box. Click again or
+                  double click to start editing the text.
+                </p>
+                <button class="steps__grid-item-card-button">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="happy">
+        <div class="container">
+          <div class="happy__grid">
+            <div class="happy__grid-item" data-aos="fade-right">
+              <h2 class="happy__grid-item-title">Keeping Pets Happy</h2>
+              <p class="happy__grid-item-p">
+                Cras adipiscing enim eu turpis egestas pretium aenean pharetra
+                magna. Tempus urna et pharetra pharetra massa massa ultricies mi
+                quis. Ut faucibus pulvinar elementum enim neque volutpat. Augue
+                mauris augue neque gravida in. Venenatis cras sed felis eget
+                velit aliquet sagittis. Morbi leo urna molestie at.
+              </p>
+              <button class="happy__grid-item-button">Read More</button>
+            </div>
+            <div class="happy__grid-item">
+              <div class="happy__grid-item-img-wrapper">
+                <img
+                  src="img/uyuyuy.jpg"
+                  alt="cat"
+                  class="happy__grid-item-img"
+                  data-aos="rotate2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__grid" data-aos="flip-up" data-aos-delay="100">
+            <div class="contact__grid-item">
+              <h2 class="contact__grid-item-title">Need Help?</h2>
+              <p class="contact__grid-item-p">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <div class="contact__grid-item-icons">
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-youtube-fill"></i>
+              </div>
+            </div>
+            <div class="contact__grid-item">
+              <form action="" class="contact__grid-item-form">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" id="name" />
+                <div class="contact__grid-item-form-wrapper">
+                  <div class="form__wrapper">
+                    <label for="phone" class="contact__grid-item-form-label"
+                      >Phone</label
+                    >
+                    <input
+                      type="tel"
+                      placeholder="Enter your phone"
+                      id="phone"
+                      class="contact__grid-item-form-input"
+                    />
+                  </div>
+                  <div class="form__wrapper">
+                    <label for="email" class="contact__grid-item-form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      id="email"
+                      class="contact__grid-item-form-input"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="contact__grid-item-form-button">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="footer__grid-item">
+            <img
+              src="img/images-removebg-preview (1).png"
+              alt="logo"
+              class="footer__grid-item-logo"
+            />
+            <p class="footer__grid-item-p">
+              Providing the best care for your feline friends. Join our
+              community of cat lovers and get the latest tips, news, and
+              stories.
+            </p>
+            <div class="footer__grid-item-social">
+              <div class="footer__grid-item-social-icon">
+                <i class="ri-facebook-fill"></i>
+              </div>
+              <div class="footer__grid-item-social-icon">
+                <i class="ri-instagram-line"></i>
+              </div>
+              <div class="footer__grid-item-social-icon">
+                <i class="ri-twitter-x-fill"></i>
+              </div>
+              <div class="footer__grid-item-social-icon">
+                <i class="ri-youtube-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer__grid-item">
+            <h3 class="footer__grid-item-title">Quick Links</h3>
+            <ul class="footer__grid-item-list">
+              <li class="footer__grid-item-list-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="#contact">Contact</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__grid-item">
+            <h3 class="footer__grid-item-title">Services</h3>
+            <ul class="footer__grid-item-list">
+              <li class="footer__grid-item-list-item">
+                <a href="#">Cat Care</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="#">Pet Guide</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="#">Cat Blog</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="#">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__grid-item">
+            <h3 class="footer__grid-item-title">Contact Info</h3>
+            <ul class="footer__grid-item-list">
+              <li class="footer__grid-item-list-item">
+                <a href="mailto:info@catsy.com">info@catsy.com</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+              </li>
+              <li class="footer__grid-item-list-item">
+                <a href="#">123 Cat Street, Kitty City</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom" data-aos="fade-up" data-aos-delay="100">
+          <p class="footer__bottom-copyright">
+            © 2025 Catsy. All rights reserved.
+          </p>
+          <div class="footer__bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        offset: 100,
+        once: false,
+        mirror: true,
+        easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+      });
+    </script>
+  </body>
+</html>
